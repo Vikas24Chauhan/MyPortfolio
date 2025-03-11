@@ -18,6 +18,10 @@ import TenFundingLogo from "../Images/ten_funding_logo.png";
 import TenFunding from "../Images/ten_funding.png";
 import TentoddlersLogo from "../Images/ten_toddlers_logo.png";
 import TenToddlers from "../Images/ten_toddlers.png";
+import ImagifyLogo from "../Images/imagify_logo.png";
+import Imagify from "../Images/imagify.png";
+import VcIncubationLogo from "../Images/vcIncubation_logo.png";
+import VcIncubation from "../Images/vcIncubation.png";
 
 export const Projects = () => {
   useEffect(() => {
@@ -119,7 +123,7 @@ export const Projects = () => {
           <img
             className={styles.icons}
             src={TenFundingLogo}
-            alt="Ten Funding Logo Logo"
+            alt="Ten Funding Logo"
             data-aos="zoom-in"
           />
           <div className={styles.text_box} data-aos="fade-up">
@@ -199,6 +203,91 @@ export const Projects = () => {
         <div className={`${styles.box} ${styles.left_box}`}>
           <img
             className={styles.icons}
+            src={ImagifyLogo}
+            alt="Imagify Logo"
+            data-aos="zoom-in"
+          />
+          <div className={styles.text_box} data-aos="fade-up">
+            <img src={Imagify} alt="Imagify Project Image" />
+            <div className={styles.tags_box}>
+              <span className={styles.tags}>React js</span>
+              <span className={styles.tags}>Node js</span>
+              <span className={styles.tags}>Express Js</span>
+              <span className={styles.tags}>MongoDB</span>
+              <span className={styles.tags}>JavaScript</span>
+              <span className={styles.tags}>HTML</span>
+              <span className={styles.tags}>CSS</span>
+            </div>
+            <p className={styles.title}>IMAGIFY</p>
+            <p>
+              Developed a web-based application that converts text into images,
+              allowing users to generate visually appealing text-based graphics.
+              The project utilizes modern web technologies, including React.js
+              for the frontend and Node.js for backend processing. Implemented
+              features such as customizable fonts, colors, and backgrounds to
+              enhance user creativity. Designed an intuitive UI for seamless
+              user experience and optimized performance for fast image
+              generation.
+            </p>
+            <div className={styles.button_box}>
+              <a
+                href="https://imagify-ten-mu.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live App
+              </a>
+            </div>
+            <span className={styles.left_box_arrow}></span>
+          </div>
+        </div>
+
+        {/* Project 6 */}
+        <div className={`${styles.box} ${styles.right_box}`}>
+          <img
+            className={styles.icons}
+            src={VcIncubationLogo}
+            alt="VC Incubation Logo"
+            data-aos="zoom-in"
+            style={{ backgroundColor: "white" }}
+          />
+          <div className={styles.text_box} data-aos="fade-up">
+            <img src={VcIncubation} alt="VC Incubation Project Image" />
+            <div className={styles.tags_box}>
+              <span className={styles.tags}>React js</span>
+              <span className={styles.tags}>JavaScript</span>
+              <span className={styles.tags}>HTML</span>
+              <span className={styles.tags}>CSS</span>
+            </div>
+            <p className={styles.title}>VC & Incubation</p>
+            <p>
+              Developed a comprehensive platform to connect startups with
+              venture capitalists and incubators. The project facilitates
+              funding opportunities, mentorship, and business growth by
+              providing a seamless interface for entrepreneurs and investors.
+              Built using modern web technologies like React.js for the frontend
+              and Node.js for backend operations, ensuring scalability and
+              efficiency. Integrated features such as startup profiling,
+              investment tracking, and collaboration tools to streamline the
+              incubation process.
+            </p>
+            <div className={styles.button_box}>
+              <a
+                href="https://vc-incubation.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live App
+              </a>
+            </div>
+            <span className={styles.right_box_arrow}></span>
+          </div>
+        </div>
+
+        {/* Project 7 */}
+        <div className={`${styles.box} ${styles.left_box}`}>
+          <img
+            className={styles.icons}
             src={TenAILogo}
             alt="TEN-AI-Consulting-Labs Logo"
             data-aos="zoom-in"
@@ -231,7 +320,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        {/* Project 6 */}
+        {/* Project 8 */}
         <div className={`${styles.box} ${styles.right_box}`}>
           <img
             className={styles.icons}
@@ -269,7 +358,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        {/* Project 7 */}
+        {/* Project 9 */}
         <div className={`${styles.box} ${styles.left_box}`}>
           <img
             className={styles.icons}
@@ -307,7 +396,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        {/* Project 8 */}
+        {/* Project 10 */}
         <div className={`${styles.box} ${styles.right_box}`}>
           <img
             className={styles.icons}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import styles from "../Styles/Navbar.module.css";
+import "./Navbar.css";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,27 +54,29 @@ export const Navbar = () => {
   }, [activeLink, navigate]);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.container}>
+    <nav className="navbar-container">
+      <div className="navbar-main">
         <div>
           <Link
             to="/"
-            className={styles.name}
+            className="navbar-name"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <span className={styles.brackets}>&lt;</span>Vikas
-            <span className={styles.slash}>/</span>Chauhan
-            <span className={styles.brackets}>&gt;</span>
+            <span className="navbar-brackets">&lt;</span>Vikas
+            <span className="navbar-slash">/</span>Chauhan
+            <span className="navbar-brackets">&gt;</span>
           </Link>
         </div>
-        <div className={styles.menu_icon} onClick={handleIsOpen}>
+        <div className="navbar-menu_icon" onClick={handleIsOpen}>
           {!isOpen ? "\u2630" : "\u2716"}
         </div>
-        <ul className={styles.collapse}>
+        <ul className="navbar-collapse">
           <li>
             <NavLink
               to="#about"
-              className={activeLink === "about" ? styles.active : styles.anchor}
+              className={
+                activeLink === "about" ? "navbar-active" : "navbar-anchor"
+              }
               onClick={() => scrollToSection("about")}
             >
               About
@@ -84,7 +86,7 @@ export const Navbar = () => {
             <NavLink
               to="#skills"
               className={
-                activeLink === "skills" ? styles.active : styles.anchor
+                activeLink === "skills" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("skills")}
             >
@@ -95,7 +97,7 @@ export const Navbar = () => {
             <NavLink
               to="#experiences"
               className={
-                activeLink === "experiences" ? styles.active : styles.anchor
+                activeLink === "experiences" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("experiences")}
             >
@@ -106,7 +108,7 @@ export const Navbar = () => {
             <NavLink
               to="#projects"
               className={
-                activeLink === "projects" ? styles.active : styles.anchor
+                activeLink === "projects" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("projects")}
             >
@@ -118,7 +120,7 @@ export const Navbar = () => {
             <NavLink
               to="#education"
               className={
-                activeLink === "education" ? styles.active : styles.anchor
+                activeLink === "education" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("education")}
             >
@@ -126,9 +128,9 @@ export const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <div className={styles.collapse}>
+        <div className="navbar-collapse">
           <a
-            className={styles.github}
+            className="navbar-github"
             href="https://github.com/Vikas24Chauhan"
             target="_blank"
             rel="noreferrer"
@@ -138,11 +140,13 @@ export const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className={styles.dropdown}>
+        <div className="navbar-dropdown">
           <li>
             <NavLink
               to="#about"
-              className={activeLink === "about" ? styles.active : styles.anchor}
+              className={
+                activeLink === "about" ? "navbar-active" : "navbar-anchor"
+              }
               onClick={() => scrollToSection("about")}
             >
               About
@@ -152,7 +156,7 @@ export const Navbar = () => {
             <NavLink
               to="#skills"
               className={
-                activeLink === "skills" ? styles.active : styles.anchor
+                activeLink === "skills" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("skills")}
             >
@@ -163,7 +167,7 @@ export const Navbar = () => {
             <NavLink
               to="#experiences"
               className={
-                activeLink === "experiences" ? styles.active : styles.anchor
+                activeLink === "experiences" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("experiences")}
             >
@@ -174,7 +178,7 @@ export const Navbar = () => {
             <NavLink
               to="#projects"
               className={
-                activeLink === "projects" ? styles.active : styles.anchor
+                activeLink === "projects" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("projects")}
             >
@@ -185,7 +189,7 @@ export const Navbar = () => {
             <NavLink
               to="#education"
               className={
-                activeLink === "education" ? styles.active : styles.anchor
+                activeLink === "education" ? "navbar-active" : "navbar-anchor"
               }
               onClick={() => scrollToSection("education")}
             >
@@ -194,7 +198,7 @@ export const Navbar = () => {
           </li>
           <li>
             <a
-              className={styles.github}
+              className="navbar-github"
               href="https://github.com/Vikas24Chauhan"
               target="_blank"
               rel="noreferrer"

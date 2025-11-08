@@ -1,4 +1,4 @@
-import styles from "../Styles/Skills.module.css";
+import "./Skills.css";
 import VanillaTilt from "vanilla-tilt";
 import { useEffect } from "react";
 import Reactjs from "../Images/reactjs.png";
@@ -40,31 +40,31 @@ export const Skills = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <p className={styles.heading}>Skills</p>
-      <p className={styles.desc}>
+    <div className="skills-container">
+      <p className="skills-heading">Skills</p>
+      <p className="skills-desc">
         Tools and programming languages I utilize to create and develop
         innovative projects.
       </p>
 
-      <div className={styles.cards_container}>
-        <div className={styles.row}>
+      <div className="skills-cards_container">
+        <div className="skills-row">
           {/* Programming Language Section */}
-          <div className={`${styles.cards} tilt`}>
+          <div className="skills-cards tilt">
             <div>Languages</div>
-            <div className={styles.tech_box}>
-              <div className={styles.tech}>
+            <div className="skills-tech_box">
+              <div className="skills-tech">
                 <img src={C} alt="c" />C
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={Java} alt="java" />
                 Java
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={Python} alt="python" />
                 Python
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={JavaScript} alt="javascript" />
                 JavaScript
               </div>
@@ -72,26 +72,26 @@ export const Skills = () => {
           </div>
 
           {/* FrontEnd Section */}
-          <div className={`${styles.cards} tilt`}>
+          <div className="skills-cards tilt">
             <div>Frontend</div>
-            <div className={styles.tech_box}>
-              <div className={styles.tech}>
+            <div className="skills-tech_box">
+              <div className="skills-tech">
                 <img src={Reactjs} alt="reactjs" />
                 React.js
               </div>
-              {/* <div className={styles.tech}>
+              {/* <div className="skills-tech}>
                 <img src={MERN} alt="mern" />
                 MERN Stack
               </div> */}
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={HTML} alt="html" />
                 HTML
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={CSS} alt="css" />
                 CSS
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={JavaScript} alt="javascript" />
                 JavaScript
               </div>
@@ -99,24 +99,24 @@ export const Skills = () => {
           </div>
         </div>
 
-        <div className={styles.row}>
+        <div className="skills-row">
           {/* BackEnd Section */}
-          <div className={`${styles.cards} tilt`}>
+          <div className="skills-cards tilt">
             <div>Backend & Database</div>
-            <div className={styles.tech_box}>
-              <div className={styles.tech}>
+            <div className="skills-tech_box">
+              <div className="skills-tech">
                 <img src={Nodejs} alt="nodejs" />
                 Node.js
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={Expressjs} alt="expressjs" />
                 Express.js
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={MongoDB} alt="mongodb" />
                 MongoDB
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={RestAPI} alt="restapi" />
                 REST API
               </div>
@@ -124,24 +124,24 @@ export const Skills = () => {
           </div>
 
           {/* Other Tools Section */}
-          <div className={`${styles.cards} tilt`}>
+          <div className="skills-cards tilt">
             <div>Other Tools</div>
-            <div className={styles.tech_box}>
-              <div className={styles.tech}>
+            <div className="skills-tech_box">
+              <div className="skills-tech">
                 <img src={Git} alt="git" />
                 Git
               </div>
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={GitHub} alt="github" />
                 GitHub
               </div>
 
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={VSCode} alt="vscode" />
                 VS Code
               </div>
 
-              <div className={styles.tech}>
+              <div className="skills-tech">
                 <img src={ChatGPT} alt="chatgpt" />
                 ChatGPT
               </div>

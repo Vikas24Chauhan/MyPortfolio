@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "../Styles/Timeline.module.css";
+import styles from "./Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CDNLogo from "../Images/cdn_logo.jpg";

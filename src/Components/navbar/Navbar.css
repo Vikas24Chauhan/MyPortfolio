@@ -1,0 +1,99 @@
+.navbar-main {
+  height: 80px;
+  padding: 0 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navbar-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  background-color: rgb(9, 9, 23);
+  color: white;
+  max-width: 1200px;
+}
+.navbar-name {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.navbar-brackets {
+  color: rgb(133, 76, 230);
+  font-size: 32px;
+}
+.navbar-slash {
+  color: rgb(133, 76, 230);
+}
+.navbar-menu_icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+.navbar-collapse {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar-anchor {
+  color: white;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.navbar-github {
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: rgb(133, 76, 230) 2px solid;
+  color: rgb(133, 76, 230);
+  text-decoration: none;
+  transition: all ease-in-out 0.5s;
+}
+.navbar-anchor:hover {
+  color: rgb(133, 76, 230);
+  transition: all ease-in-out 0.3s;
+}
+.navbar-github:hover {
+  color: white;
+  background-color: rgb(133, 76, 230);
+  transition: all ease-in-out 0.5s;
+}
+.navbar-active {
+  color: rgb(133, 76, 230);
+  text-decoration: none;
+}
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  /* background-color: rgb(19, 19, 31); */
+  background-color: rgba(19, 19, 31, 0.7);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.navbar-dropdown li {
+  list-style-type: none;
+  padding: 5px 30px;
+}
+.navbar-dropdown li:last-child {
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-menu_icon {
+    display: block;
+  }
+  .navbar-dropdown {
+    display: block;
+  }
+}

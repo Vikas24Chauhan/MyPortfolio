@@ -1,10 +1,10 @@
-import { Navbar } from "./Components/Scripts/Navbar";
-import { About } from "./Components/Scripts/About";
-import { Skills } from "./Components/Scripts/Skills";
-import { Projects } from "./Components/Scripts/Projects";
-import { Experiences } from "./Components/Scripts/Experiences";
-import { Education } from "./Components/Scripts/Education";
-import { Footer } from "./Components/Scripts/Footer";
+import { Navbar } from "./Components/navbar/Navbar";
+import { About } from "./Components/about/About";
+import { Skills } from "./Components/skills/Skills";
+import { Projects } from "./Components/projects/Projects";
+import { Experiences } from "./Components/experiences/Experiences";
+import { Education } from "./Components/education/Education";
+import { Footer } from "./Components/footer/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {

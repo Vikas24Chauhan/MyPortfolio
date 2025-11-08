@@ -1,4 +1,4 @@
-.container {
+.about-container {
   display: flex;
   width: 90%;
   height: auto;
@@ -9,7 +9,8 @@
   padding-top: 80px;
   margin: 0 auto 80px;
 }
-.mypic {
+
+.about-mypic {
   max-height: 400px;
   max-width: 400px;
   height: 40vw;
@@ -19,30 +20,36 @@
   transition: transform 0.3s ease;
   box-shadow: rgb(31, 38, 52) 0 0 60px;
 }
-.about {
+
+.about-main {
   width: 50%;
   text-align: left;
 }
-.name {
+
+.about-name {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700;
   margin: 10px 0;
 }
-.title {
+
+.about-title {
   font-size: 32px;
   font-weight: 600;
   margin: 10px 0;
 }
-.typewriter {
+
+.about-typewriter {
   color: rgb(133, 76, 230);
 }
-.bio {
+
+.about-bio {
   font-size: 20px;
   color: #919299;
   margin: 10px 0;
 }
-.resume {
+
+.about-resume {
   display: inline-block;
   padding: 12px 0;
   max-width: 300px;
@@ -58,33 +65,35 @@
   box-shadow: rgb(31, 38, 52) 0 0 60px;
   transition: all ease-in-out 0.5s;
 }
-.resume:hover {
+
+.about-resume:hover {
   transform: scale(1.1);
   transition: all ease-in-out 0.5s;
 }
+
 @media screen and (max-width: 800px) {
-  .container {
+  .about-container {
     flex-direction: column-reverse;
     margin-top: 30px;
   }
-  .mypic {
+  .about-mypic {
     max-height: 280px;
     max-width: 280px;
     height: 90vw;
     width: 90vw;
   }
-  .about {
+  .about-main {
     width: 90vw;
     text-align: center;
   }
-  .name {
+  .about-name {
     font-size: 40px;
     line-height: 50px;
   }
-  .title {
+  .about-title {
     font-size: 22px;
   }
-  .bio {
+  .about-bio {
     font-size: 16px;
   }
 }

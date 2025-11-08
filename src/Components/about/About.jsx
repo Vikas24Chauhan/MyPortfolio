@@ -1,4 +1,4 @@
-import styles from "../Styles/About.module.css";
+import "./About.css";
 import { useRef, useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -31,21 +31,21 @@ export const About = () => {
   });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.about}>
-        <p className={styles.name}>
+    <div className="about-container">
+      <div className="about-main">
+        <p className="about-name">
           Hi, I am
           <br />
           Vikas Chauhan
         </p>
-        <div className={styles.title}>
+        <div className="about-title">
           I am a{" "}
-          <span className={styles.typewriter}>
+          <span className="about-typewriter">
             {text}
             <Cursor />
           </span>
         </div>
-        <div className={styles.bio}>
+        <div className="about-bio">
           I am a motivated and versatile individual, always eager to take on new
           challenges. With a passion for learning, I am dedicated to delivering
           high-quality results. With a positive attitude and a growth mindset, I
@@ -55,12 +55,12 @@ export const About = () => {
           href="https://drive.google.com/file/d/1T9_0AQpJiOzQn-5X4id2H69GAW2tawTA/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
-          className={styles.resume}
+          className="about-resume"
         >
           Check Resume
         </a>
       </div>
-      <img className={styles.mypic} ref={tiltRef} src={HeroImage} alt="mypic" />
+      <img className="about-mypic" ref={tiltRef} src={HeroImage} alt="mypic" />
     </div>
   );
 };

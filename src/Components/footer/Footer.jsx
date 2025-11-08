@@ -1,10 +1,10 @@
-import styles from "../Styles/Footer.module.css";
+import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div className={styles.container}>
-      <p className={styles.name}>Vikas Chauhan</p>
-      <div className={styles.links}>
+    <div className="footer-container">
+      <p className="footer-name">Vikas Chauhan</p>
+      <div className="footer-links">
         <a
           href="https://drive.google.com/file/d/1T9_0AQpJiOzQn-5X4id2H69GAW2tawTA/view?usp=drive_link"
           target="_blank"

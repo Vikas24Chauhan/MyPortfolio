@@ -45,16 +45,8 @@ export const Footer = () => {
         >
           <i className="fa-solid fa-phone"></i>
         </a>
-        <a
-          href="https://maps.app.goo.gl/BrYiQ6DAhRNCEHS46"
-          target="_blank"
-          rel="noreferrer"
-          title="Address"
-        >
-          <i className="fa-solid fa-location-dot"></i>
-        </a>
       </div>
-      <p>&copy; 2024 Vikas Chauhan. All rights reserved.</p>
+      <p>&copy; 2025 Vikas Chauhan. All rights reserved.</p>
     </div>
   );
 };

@@ -7,12 +7,14 @@
   align-items: center;
   margin-bottom: 150px;
 }
+
 .experiences-heading {
   text-align: center;
   font-size: 52px;
   font-weight: 600;
   margin: 0;
 }
+
 .experiences-desc {
   text-align: center;
   font-size: 18px;
@@ -20,16 +22,20 @@
   color: #919299;
   margin: 0 10px 20px;
 }
+
 .experiences-timeline {
   position: relative;
   overflow: hidden;
+  margin-top: 2rem;
 }
+
 .experiences-box {
   padding: 10px 50px;
   position: relative;
   width: 50%;
   margin-bottom: 20px;
 }
+
 .experiences-text_box {
   padding: 20px 30px;
   background-color: rgba(17, 25, 40, 0.83);
@@ -39,22 +45,27 @@
   border-radius: 16px;
   color: #919299;
 }
+
 .experiences-text_box img {
   width: 100%;
   margin: 1rem auto;
   display: block;
   border-radius: 10px;
 }
+
 .experiences-text_box img:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease-in-out;
 }
+
 .experiences-left_box {
   left: 0;
 }
+
 .experiences-right_box {
   left: 50%;
 }
+
 .experiences-icons {
   position: absolute;
   width: 50px;
@@ -64,9 +75,11 @@
   top: 32px;
   z-index: 10;
 }
+
 .experiences-right_box .experiences-icons {
   left: -25px;
 }
+
 .experiences-timeline::after {
   content: "";
   position: absolute;
@@ -78,20 +91,25 @@
   margin-left: -3px;
   z-index: -1;
 }
+
 .experiences-title {
   color: rgba(255, 255, 255, 0.9);
   font-size: 24px;
   font-weight: 600;
 }
+
 .experiences-subtitle {
   color: rgb(177, 178, 179);
   font-size: 20px;
   font-weight: 500;
 }
+
 .experiences-tags_box {
   display: flex;
   flex-wrap: wrap;
+  margin: 1rem 0;
 }
+
 .experiences-tags {
   font-size: 14px;
   padding: 0 6px;
@@ -101,10 +119,13 @@
   color: rgb(133, 76, 230);
   background-color: rgba(133, 76, 230, 0.082);
 }
+
 .experiences-button_box {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
+
 .experiences-button_box a {
   flex: 1;
   min-width: fit-content;
@@ -119,10 +140,12 @@
   border-radius: 12px;
   transition: all ease-in-out 0.5s;
 }
+
 .experiences-button_box a:hover {
   background-color: rgba(133, 76, 230, 0.7);
   transition: all ease-in-out 0.5s;
 }
+
 .experiences-left_box_arrow {
   height: 0;
   width: 0;
@@ -134,6 +157,7 @@
   border-left: 15px solid rgba(17, 25, 40, 0.83);
   right: -15px;
 }
+
 .experiences-right_box_arrow {
   height: 0;
   width: 0;

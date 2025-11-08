@@ -2,6 +2,7 @@ import "./Skills.css";
 import VanillaTilt from "vanilla-tilt";
 import { useEffect } from "react";
 import Reactjs from "../Images/reactjs.png";
+import WordPress from "../Images/wordPress-logo.png";
 // import MERN from "../Images/mern.png";
 import HTML from "../Images/html.png";
 import CSS from "../Images/css.png";
@@ -94,6 +95,10 @@ export const Skills = () => {
               <div className="skills-tech">
                 <img src={JavaScript} alt="javascript" />
                 JavaScript
+              </div>
+              <div className="skills-tech">
+                <img src={WordPress} alt="wordpress" />
+                WordPress
               </div>
             </div>
           </div>

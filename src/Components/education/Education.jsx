@@ -32,7 +32,7 @@ export const Education = () => {
             <p className="education-subtitle">
               G L Bajaj Institute of Technology and Management, Greater Noida
             </p>
-            <p className="education-subtitle">[ September 2020 - June 2022 ]</p>
+            <p className="education-date">[ September 2020 - June 2022 ]</p>
             <p className="education-description">
               I did my MCA from G L Bajaj. Master of Computer Applications (MCA)
               is a two-year professional post-graduate course for candidates
@@ -54,7 +54,7 @@ export const Education = () => {
               Bachelor of Computer Applications (BCA)
             </p>
             <p className="education-subtitle">IMS Ghaziabad</p>
-            <p className="education-subtitle">[ August 2017 - July 2020 ]</p>
+            <p className="education-date">[ August 2017 - July 2020 ]</p>
             <p>
               I did my BCA from IMS Ghaziabad. It's a three-year undergraduate
               degree program that focuses on computer applications and software

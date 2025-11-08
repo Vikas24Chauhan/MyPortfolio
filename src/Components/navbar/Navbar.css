@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
 }
+
 .navbar-container {
   position: fixed;
   z-index: 1000;
@@ -16,6 +17,7 @@
   color: white;
   max-width: 1200px;
 }
+
 .navbar-name {
   display: flex;
   align-items: center;
@@ -24,28 +26,34 @@
   color: white;
   text-decoration: none;
 }
+
 .navbar-brackets {
   color: rgb(133, 76, 230);
   font-size: 32px;
 }
+
 .navbar-slash {
   color: rgb(133, 76, 230);
 }
+
 .navbar-menu_icon {
   display: none;
   cursor: pointer;
   font-size: 24px;
 }
+
 .navbar-collapse {
   list-style-type: none;
   display: flex;
   gap: 20px;
 }
+
 .navbar-anchor {
   color: white;
   text-decoration: none;
   transition: all ease-in-out 0.3s;
 }
+
 .navbar-github {
   padding: 10px 20px;
   font-weight: 500;
@@ -55,19 +63,23 @@
   text-decoration: none;
   transition: all ease-in-out 0.5s;
 }
+
 .navbar-anchor:hover {
   color: rgb(133, 76, 230);
   transition: all ease-in-out 0.3s;
 }
+
 .navbar-github:hover {
   color: white;
   background-color: rgb(133, 76, 230);
   transition: all ease-in-out 0.5s;
 }
+
 .navbar-active {
   color: rgb(133, 76, 230);
   text-decoration: none;
 }
+
 .navbar-dropdown {
   display: none;
   position: absolute;
@@ -78,10 +90,12 @@
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
+
 .navbar-dropdown li {
   list-style-type: none;
   padding: 5px 30px;
 }
+
 .navbar-dropdown li:last-child {
   padding: 15px 30px;
 }
@@ -95,5 +109,7 @@
   }
   .navbar-dropdown {
     display: block;
+    background-color: rgb(10, 10, 38);
+    padding: 1rem 0;
   }
 }

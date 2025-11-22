@@ -48,15 +48,15 @@ export const Experiences = () => {
               work is more than code; it's a contribution to a community of
               believers.
             </p>
-            <div className="experiences-button_box">
-              {/* <a
+            {/* <div className="experiences-button_box">
+              <a
                 href="https://drive.google.com/file/d/1odjYJPZPrrafRozvgODwfMmsdhxr4WtV/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
               >
                 Experience Letter
-              </a> */}
-            </div>
+              </a>
+            </div> */}
             <span className="experiences-right_box_arrow"></span>
           </div>
         </div>
@@ -87,7 +87,7 @@ export const Experiences = () => {
               scalable and maintainable React applications while collaborating
               effectively with cross-functional teams.
             </p>
-            <div className="experiences-button_box">
+            {/* <div className="experiences-button_box">
               <a
                 href="https://drive.google.com/file/d/1HcDOVHWdth6CdIEcQJ3D9neYOK2cI7GG/view?usp=drive_link"
                 target="_blank"
@@ -95,7 +95,7 @@ export const Experiences = () => {
               >
                 Experience Letter
               </a>
-            </div>
+            </div> */}
             <span className="experiences-left_box_arrow"></span>
           </div>
         </div>
@@ -112,8 +112,8 @@ export const Experiences = () => {
             <p className="experiences-subtitle">Software Developer</p>
             <p className="experiences-subtitle">February 2022 - March 2023</p>
             <div className="experiences-tags_box">
-              <span className="experiences-tags">Node js</span>
               <span className="experiences-tags">React js</span>
+              <span className="experiences-tags">Node js</span>
               <span className="experiences-tags">Express js</span>
               <span className="experiences-tags">MongoDB</span>
               <span className="experiences-tags">JavaScript</span>
@@ -128,7 +128,7 @@ export const Experiences = () => {
               passionate about tackling complex technical challenges to deliver
               reliable and high-impact software solutions.
             </p>
-            <div className="experiences-button_box">
+            {/* <div className="experiences-button_box">
               <a
                 href="https://firebasestorage.googleapis.com/v0/b/portfolio-e032c.appspot.com/o/experience%20letter.pdf?alt=media&token=c44063e2-7f8a-4ab0-836f-8e07351865f0"
                 target="_blank"
@@ -136,7 +136,7 @@ export const Experiences = () => {
               >
                 Experience Letter
               </a>
-            </div>
+            </div> */}
             <span className="experiences-right_box_arrow"></span>
           </div>
         </div>

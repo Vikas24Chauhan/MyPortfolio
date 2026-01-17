@@ -21,12 +21,7 @@ export const About = () => {
   }, []);
 
   const [text] = useTypewriter({
-    words: [
-      "React Js Developer",
-      "Node Js Developer",
-      "Web Developer",
-      "Programmer",
-    ],
+    words: ["React Js Developer", "Frontend Developer", "Web Developer"],
     loop: {},
   });
 

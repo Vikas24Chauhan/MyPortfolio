@@ -70,7 +70,9 @@ export const Experiences = () => {
           />
           <div className="experiences-text_box" data-aos="fade-up">
             <p className="experiences-title">The Entrepreneurship Network</p>
-            <p className="experiences-subtitle">React Js Developer</p>
+            <p className="experiences-subtitle">
+              React Js Developer (Part-Time)
+            </p>
             <p className="experiences-subtitle">September 2024 - May 2025</p>
             <div className="experiences-tags_box">
               <span className="experiences-tags">React js</span>

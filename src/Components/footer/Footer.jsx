@@ -46,7 +46,7 @@ export const Footer = () => {
           <i className="fa-solid fa-phone"></i>
         </a>
       </div>
-      <p>&copy; 2025 Vikas Chauhan. All rights reserved.</p>
+      <p>&copy; 2026 Vikas Chauhan. All rights reserved.</p>
     </div>
   );
 };

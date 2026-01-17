@@ -80,8 +80,8 @@ export const Skills = () => {
                 <img src={Reactjs} alt="reactjs" />
                 React.js
               </div>
-              {/* <div className="skills-tech}>
-                <img src={MERN} alt="mern" />
+              {/* <div className="skills-tech">
+                <img src={MERN} alt="" />
                 MERN Stack
               </div> */}
               <div className="skills-tech">
@@ -102,11 +102,9 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="skills-row">
           {/* BackEnd Section */}
-          <div className="skills-cards tilt">
+          {/* <div className="skills-cards tilt">
             <div>Backend & Database</div>
             <div className="skills-tech_box">
               <div className="skills-tech">
@@ -126,7 +124,7 @@ export const Skills = () => {
                 REST API
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Other Tools Section */}
           <div className="skills-cards tilt">
@@ -146,10 +144,10 @@ export const Skills = () => {
                 VS Code
               </div>
 
-              <div className="skills-tech">
+              {/* <div className="skills-tech">
                 <img src={ChatGPT} alt="chatgpt" />
                 ChatGPT
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import "./Skills.css";
 import VanillaTilt from "vanilla-tilt";
 import { useEffect } from "react";
 import Reactjs from "../Images/reactjs.png";
-import WordPress from "../Images/wordPress-logo.png";
+import WordPress from "../Images/wordpress_logo.png";
 // import MERN from "../Images/mern.png";
 import HTML from "../Images/html.png";
 import CSS from "../Images/css.png";

@@ -1,99 +1,67 @@
 .about-container {
-  display: flex;
-  width: 90%;
-  height: auto;
-  aspect-ratio: 1032/692;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-  padding-top: 80px;
-  margin: 0 auto 80px;
+  background-color: #000000;
 }
 
-.about-mypic {
-  max-height: 400px;
-  max-width: 400px;
-  height: 40vw;
-  width: 40vw;
-  border-radius: 50%;
-  border: 4px solid rgb(133, 76, 230);
-  transition: transform 0.3s ease;
-  box-shadow: rgb(31, 38, 52) 0 0 60px;
-}
-
-.about-main {
-  width: 50%;
-  text-align: left;
-}
-
-.about-name {
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.about-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.about-typewriter {
-  color: rgb(133, 76, 230);
-}
-
-.about-bio {
-  font-size: 20px;
-  color: #919299;
-  margin: 10px 0;
-}
-
-.about-resume {
-  display: inline-block;
-  padding: 12px 0;
-  max-width: 300px;
-  width: 95%;
-  margin: 20px 0;
-  font-size: 20px;
-  font-weight: 600;
+.about-section {
+  position: relative;
   text-align: center;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  background: linear-gradient(to right, rgb(230, 0, 255), rgb(132, 0, 255));
-  box-shadow: rgb(31, 38, 52) 0 0 60px;
-  transition: all ease-in-out 0.5s;
+  padding: 5rem 0;
+  background-color: #ffffff;
+  border-radius: 50px 50px 0 0;
 }
 
-.about-resume:hover {
-  transform: scale(1.1);
-  transition: all ease-in-out 0.5s;
+.about-content {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 800px) {
-  .about-container {
-    flex-direction: column-reverse;
-    margin-top: 30px;
+.about-content h2 {
+  font-size: 42px;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ----------------------------- Responsive Style ---------------------------- */
+
+@media (max-width: 1440px) {
+  .about-content {
+    width: 85%;
   }
-  .about-mypic {
-    max-height: 280px;
-    max-width: 280px;
-    height: 90vw;
-    width: 90vw;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    width: 90%;
   }
-  .about-main {
-    width: 90vw;
-    text-align: center;
+}
+
+@media (max-width: 868px) {
+  .about-section {
+    border-radius: 40px 40px 0 0;
   }
-  .about-name {
-    font-size: 40px;
-    line-height: 50px;
+
+  .about-content {
+    width: 95%;
   }
-  .about-title {
-    font-size: 22px;
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    border-radius: 30px 30px 0 0;
   }
-  .about-bio {
-    font-size: 16px;
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 32px;
   }
 }

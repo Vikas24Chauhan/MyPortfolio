@@ -1,32 +1,37 @@
 .experiences-container {
-  height: auto;
-  width: 100%;
+  background-color: #000000;
+}
+
+.experiences-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 150px;
+  padding: 5rem 0;
+  background-color: #ffffff;
+  border-radius: 50px 50px 0 0;
 }
 
 .experiences-heading {
   text-align: center;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 600;
-  margin: 0;
 }
 
-.experiences-desc {
+.experiences-subheading {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  color: #919299;
-  margin: 0 10px 20px;
+  margin: 0 10px;
 }
 
 .experiences-timeline {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding-top: 2rem;
   position: relative;
   overflow: hidden;
-  margin-top: 2rem;
 }
 
 .experiences-box {
@@ -37,13 +42,22 @@
 }
 
 .experiences-text_box {
-  padding: 20px 30px;
-  background-color: rgba(17, 25, 40, 0.83);
-  box-shadow: rgba(29, 92, 230, 0.15) 0 0 24px;
+  padding: 2rem;
+  box-shadow:
+    inset 0 0.361px 0.181px -1.25px rgba(0, 0, 0, 0.18),
+    inset 0 1.373px 0.687px -2.5px rgba(0, 0, 0, 0.16),
+    inset 0 6px 3px -3.75px rgba(0, 0, 0, 0.06),
+    inset 0 0.422px 0.422px -1.25px hsla(0, 0%, 100%, 0.18),
+    inset 0 1.602px 1.602px -2.5px hsla(0, 0%, 100%, 0.16),
+    inset 0 7px 7px -3.75px hsla(0, 0%, 100%, 0.06),
+    0 0.652px 0.652px -0.2px rgba(0, 0, 0, 0.02),
+    0 1.776px 1.776px -0.4px rgba(0, 0, 0, 0.02),
+    0 3.899px 3.899px -0.6px rgba(0, 0, 0, 0.03),
+    0 8.655px 8.655px -0.8px rgba(0, 0, 0, 0.04),
+    0 22px 22px -1px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.125);
   position: relative;
   border-radius: 16px;
-  color: #919299;
 }
 
 .experiences-text_box img {
@@ -74,6 +88,7 @@
   right: -25px;
   top: 32px;
   z-index: 10;
+  border: 1px solid;
 }
 
 .experiences-right_box .experiences-icons {
@@ -85,23 +100,28 @@
   position: absolute;
   width: 6px;
   height: 100%;
-  background-color: #fff;
+  background: linear-gradient(
+    to bottom,
+    rgb(230, 0, 255),
+    rgb(132, 0, 255)
+  ) !important;
   top: 0;
   left: 50%;
   margin-left: -3px;
-  z-index: -1;
 }
 
 .experiences-title {
-  color: rgba(255, 255, 255, 0.9);
   font-size: 24px;
   font-weight: 600;
 }
 
 .experiences-subtitle {
-  color: rgb(177, 178, 179);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
+}
+
+.experiences-description {
+  font-size: 16px;
 }
 
 .experiences-tags_box {
@@ -112,12 +132,11 @@
 
 .experiences-tags {
   font-size: 14px;
-  padding: 0 6px;
+  padding: 2px 6px;
   margin: 2px;
   border-radius: 12px;
   border: 1px solid rgb(133, 76, 230);
   color: rgb(133, 76, 230);
-  background-color: rgba(133, 76, 230, 0.082);
 }
 
 .experiences-button_box {
@@ -170,35 +189,70 @@
   left: -15px;
 }
 
-@media screen and (max-width: 800px) {
-  .experiences-heading {
-    font-size: 40px;
-  }
-  .experiences-desc {
-    font-size: 16px;
-  }
+/* ----------------------------- Responsive Style ---------------------------- */
+
+@media (max-width: 1440px) {
   .experiences-timeline {
-    margin: 0 auto;
+    width: 85%;
   }
+}
+
+@media (max-width: 1024px) {
+  .experiences-timeline {
+    width: 90%;
+  }
+}
+
+@media (max-width: 868px) {
+  .experiences-section {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .experiences-timeline {
+    width: 95%;
+  }
+
+  .experiences-heading {
+    font-size: 32px;
+  }
+
   .experiences-timeline::after {
     left: 31px;
   }
+
   .experiences-box {
     width: 100%;
     padding-left: 80px;
     padding-right: 25px;
   }
+
   .experiences-right_box {
     left: 0;
   }
+
   .experiences-left_box .experiences-icons,
   .experiences-right_box .experiences-icons {
     left: 10px;
   }
+
   .experiences-left_box_arrow,
   .experiences-right_box_arrow {
     border-right: 15px solid rgba(17, 25, 40, 0.83);
     border-left: 0;
     left: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experiences-section {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .experiences-timeline {
+    width: 100%;
+  }
+
+  .experiences-text_box {
+    padding: 2rem 1rem;
   }
 }

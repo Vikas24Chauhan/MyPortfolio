@@ -1,52 +1,56 @@
+import React from "react";
 import "./Footer.css";
+import {
+  FiUser,
+  FiCpu,
+  FiBriefcase,
+  FiLayers,
+  FiBookOpen,
+} from "react-icons/fi";
 
-export const Footer = () => {
+function Footer() {
   return (
     <div className="footer-container">
-      <p className="footer-name">Vikas Chauhan</p>
-      <div className="footer-links">
-        <a
-          href="https://drive.google.com/file/d/1T9_0AQpJiOzQn-5X4id2H69GAW2tawTA/view?usp=drive_link"
-          target="_blank"
-          rel="noreferrer"
-          title="Resume"
-        >
-          <i className="fa-solid fa-file"></i>
-        </a>
-        <a
-          href="https://github.com/Vikas24Chauhan"
-          target="_blank"
-          rel="noreferrer"
-          title="GitHub"
-        >
-          <i className="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/vikas-chauhan-74924912b/"
-          target="_blank"
-          rel="noreferrer"
-          title="LinkedIn"
-        >
-          <i className="fa-brands fa-linkedin"></i>
-        </a>
-        <a
-          href="mailto:vikas24chauhan@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-          title="Email"
-        >
-          <i className="fa-solid fa-envelope"></i>
-        </a>
-        <a
-          href="tel:+919873905097"
-          target="_blank"
-          rel="noreferrer"
-          title="Phone No."
-        >
-          <i className="fa-solid fa-phone"></i>
-        </a>
+      <div className="footer-section">
+        {/* About Section */}
+        <div className="footer-icon-wrapper">
+          <FiUser className="footer-icons" />
+          <span className="footer-icon-tooltip">About</span>
+        </div>
+
+        {/* Skills Section */}
+        <div className="footer-icon-wrapper">
+          <FiCpu className="footer-icons" />
+          <span className="footer-icon-tooltip">Skills</span>
+        </div>
+
+        {/* Experiences Section */}
+        <div className="footer-icon-wrapper">
+          <FiBriefcase className="footer-icons" />
+          <span className="footer-icon-tooltip">Experiences</span>
+        </div>
+
+        {/* Projects Section */}
+        <div className="footer-icon-wrapper">
+          <FiLayers className="footer-icons" />
+          <span className="footer-icon-tooltip">Projects</span>
+        </div>
+
+        {/* Education Section */}
+        <div className="footer-icon-wrapper">
+          <FiBookOpen className="footer-icons" />
+          <span className="footer-icon-tooltip">Education</span>
+        </div>
       </div>
-      <p>&copy; 2026 Vikas Chauhan. All rights reserved.</p>
+
+      <div className="footer-last">
+        <p className="footer-copy">
+          © 2026 Developer Vikas. All rights reserved.
+        </p>
+        <p className="footer-copy">Made with Love ❤️</p>
+      </div>
     </div>
   );
-};
+}
+
+export default Footer;

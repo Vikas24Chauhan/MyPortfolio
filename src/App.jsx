@@ -1,3 +1,5 @@
+import React from "react";
+import "./App.css";
 import { Navbar } from "./Components/navbar/Navbar";
 import { About } from "./Components/about/About";
 import { Skills } from "./Components/skills/Skills";

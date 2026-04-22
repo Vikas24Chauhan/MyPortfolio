@@ -1,35 +1,61 @@
-import { React, useEffect } from "react";
 import "./About.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useRef, useEffect } from "react";
+import VanillaTilt from "vanilla-tilt";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import HeroImage from "../Images/HeroImage.jpg";
 
-function About() {
+export const About = () => {
+  const tiltRef = useRef(null);
+
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 200 });
+    if (tiltRef.current) {
+      VanillaTilt.init(tiltRef.current, {
+        max: 25,
+        speed: 400,
+        reverse: true,
+        glare: true,
+        scale: 1.1,
+        "max-glare": 0.8,
+      });
+    }
   }, []);
 
+  const [text] = useTypewriter({
+    words: ["React Js Developer", "Frontend Developer", "Web Developer"],
+    loop: {},
+  });
+
   return (
-    <div id="about" className="about-container">
-      <div className="about-section">
-        <div className="about-content">
-          <h2>About Me</h2>
-          <p>
-            I am a React JS Developer with 2+ years of experience in building
-            scalable, responsive, and high-performance web applications. I
-            specialize in React.js, JavaScript (ES6+), HTML, CSS, and Tailwind
-            CSS, with a strong focus on creating clean, reusable components and
-            delivering intuitive user experiences.
-            <br />
-            <br />I have hands-on experience with API integration, state
-            management, and modern development tools like Git and Vite.
-            Passionate about clean code and performance optimization, I
-            continuously work on improving my skills and building efficient,
-            user-centric digital solutions.
-          </p>
+    <div className="about-container">
+      <div className="about-main">
+        <p className="about-name">
+          Hi, I am
+          <br />
+          Vikas Chauhan
+        </p>
+        <div className="about-title">
+          I am a{" "}
+          <span className="about-typewriter">
+            {text}
+            <Cursor />
+          </span>
         </div>
+        <div className="about-bio">
+          I am a motivated and versatile individual, always eager to take on new
+          challenges. With a passion for learning, I am dedicated to delivering
+          high-quality results. With a positive attitude and a growth mindset, I
+          am ready to make a meaningful contribution and achieve great things.
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1T9_0AQpJiOzQn-5X4id2H69GAW2tawTA/view?usp=drive_link"
+          target="_blank"
+          rel="noreferrer"
+          className="about-resume"
+        >
+          Check Resume
+        </a>
       </div>
+      <img className="about-mypic" ref={tiltRef} src={HeroImage} alt="mypic" />
     </div>
   );
-}
-
-export default About;
+};

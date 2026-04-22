@@ -1,6 +1,5 @@
 .navbar-main {
-  height: 80px;
-  padding: 0 20px;
+  padding: 1.5rem 2rem;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -9,13 +8,12 @@
 }
 
 .navbar-container {
-  position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
-  background-color: rgb(9, 9, 23);
+  background-color: #000000;
   color: white;
-  max-width: 1200px;
+  position: fixed;
 }
 
 .navbar-name {
@@ -28,12 +26,12 @@
 }
 
 .navbar-brackets {
-  color: rgb(133, 76, 230);
+  color: #feb122;
   font-size: 32px;
 }
 
 .navbar-slash {
-  color: rgb(133, 76, 230);
+  color: #feb122;
 }
 
 .navbar-menu_icon {
@@ -54,29 +52,31 @@
   transition: all ease-in-out 0.3s;
 }
 
-.navbar-github {
-  padding: 10px 20px;
-  font-weight: 500;
-  border-radius: 20px;
-  border: rgb(133, 76, 230) 2px solid;
-  color: rgb(133, 76, 230);
-  text-decoration: none;
-  transition: all ease-in-out 0.5s;
-}
-
 .navbar-anchor:hover {
-  color: rgb(133, 76, 230);
+  color: #feb122;
   transition: all ease-in-out 0.3s;
 }
 
-.navbar-github:hover {
+.navbar-github {
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
   color: white;
-  background-color: rgb(133, 76, 230);
-  transition: all ease-in-out 0.5s;
+  text-decoration: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgb(230, 0, 255), rgb(132, 0, 255));
+  box-shadow: rgb(31, 38, 52) 0 0 60px;
+}
+
+.navbar-github:hover {
+  color: rgb(230, 0, 255);
+  background: #ffffff;
 }
 
 .navbar-active {
-  color: rgb(133, 76, 230);
+  color: #feb122;
   text-decoration: none;
 }
 
@@ -100,7 +100,15 @@
   padding: 15px 30px;
 }
 
-@media screen and (max-width: 800px) {
+/* ----------------------------- Responsive Style ---------------------------- */
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 868px) {
   .navbar-collapse {
     display: none;
   }
@@ -112,4 +120,10 @@
     background-color: rgb(10, 10, 38);
     padding: 1rem 0;
   }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 800px) {
 }

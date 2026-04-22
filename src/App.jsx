@@ -1,16 +1,25 @@
-import { Navbar } from "./Components/navbar/Navbar";
-import { About } from "./Components/about/About";
-import { Skills } from "./Components/skills/Skills";
-import { Projects } from "./Components/projects/Projects";
-import { Experiences } from "./Components/experiences/Experiences";
-import { Education } from "./Components/education/Education";
-import { Footer } from "./Components/footer/Footer";
+import React from "react";
+import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Navbar } from "./components/navbar/Navbar";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+import { Skills } from "./components/skills/Skills";
+import { Experiences } from "./components/experiences/Experiences";
+import Projects from "./components/projects/Projects";
+import Education from "./components/education/Education";
+import Footer from "./components/footer/Footer";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Navbar />
+
+      <Hero />
+
+      {/* <section id="/">
+        <Hero />
+      </section> */}
 
       <section id="about">
         <About />
@@ -35,6 +44,6 @@ const App = () => {
       <Footer />
     </Router>
   );
-};
+}
 
 export default App;

@@ -1,25 +1,20 @@
-import React from "react";
-import "./App.css";
+import { Navbar } from "./Components/navbar/Navbar";
+import { About } from "./Components/about/About";
+import { Skills } from "./Components/skills/Skills";
+import { Projects } from "./Components/projects/Projects";
+import { Experiences } from "./Components/experiences/Experiences";
+import { Education } from "./Components/education/Education";
+import { Footer } from "./Components/footer/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
-// import { Navbar } from "./components/navbar/Navbar";
-// import Hero from "./components/hero/Hero";
-// import About from "./components/about/About";
-import { Skills } from "./components/skills/Skills";
-import { Experiences } from "./components/experiences/Experiences";
-// import Projects from "./components/projects/Projects";
-// import Education from "./components/education/Education";
-// import Footer from "./components/footer/Footer";
 
-function App() {
+const App = () => {
   return (
     <Router>
-      {/* <Navbar /> */}
-
-      {/* <Hero />
+      <Navbar />
 
       <section id="about">
         <About />
-      </section> */}
+      </section>
 
       <section id="skills">
         <Skills />
@@ -29,17 +24,17 @@ function App() {
         <Experiences />
       </section>
 
-      {/* <section id="projects">
+      <section id="projects">
         <Projects />
       </section>
 
       <section id="education">
         <Education />
-      </section> */}
+      </section>
 
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;

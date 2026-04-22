@@ -17,10 +17,6 @@ function App() {
 
       <Hero />
 
-      {/* <section id="/">
-        <Hero />
-      </section> */}
-
       <section id="about">
         <About />
       </section>

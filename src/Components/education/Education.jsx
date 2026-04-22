@@ -2,68 +2,69 @@ import React, { useEffect } from "react";
 import "./Education.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import IMS from "../Images/ims.png";
-import GLBajaj from "../Images/gl_bajaj.png";
 
-export const Education = () => {
+function Education() {
   useEffect(() => {
     AOS.init({ duration: 1000, offset: 200 });
   }, []);
 
   return (
-    <div className="education-container">
-      <p className="education-heading">Education</p>
-      <p className="education-desc">
-        The academic institutions and programs that have contributed to my
-        knowledge and growth.
-      </p>
-      <div className="education-timeline">
-        <div className={`education-box $education-left_box`}>
-          <img
-            className="education-icons"
-            src={GLBajaj}
-            alt="brabu"
-            data-aos="zoom-in"
-          />
-          <div className="education-text_box" data-aos="fade-up">
-            <p className="education-title">
-              Master of Computer Applications (MCA)
-            </p>
-            <p className="education-subtitle">
-              G L Bajaj Institute of Technology and Management, Greater Noida
-            </p>
-            <p className="education-date">[ September 2020 - June 2022 ]</p>
-            <p className="education-description">
-              I did my MCA from G L Bajaj. Master of Computer Applications (MCA)
-              is a two-year professional post-graduate course for candidates
-              wanting to delve deeper into the world of Computer Application
-              development with the help of learning modern programming language.
-            </p>
-            <span className="education-left_box_arrow"></span>
+    <div id="education" className="education-container">
+      <div className="education-section">
+        <p className="education-heading">Education</p>
+
+        <p className="education-subheading">
+          The academic institutions and programs that have contributed to my
+          knowledge and growth.
+        </p>
+
+        <div className="education-cards">
+          <div className="education-card1" data-aos="fade-up">
+            <div className="education-card-content">
+              <h2 className="education-title">
+                Master of Computer Applications (MCA)
+              </h2>
+
+              <h3 className="education-subtitle">
+                G L Bajaj Institute of Technology and Management, Greater Noida
+              </h3>
+
+              <h4 className="education-time">[ September 2020 - June 2022 ]</h4>
+
+              <p className="education-description">
+                I completed my MCA from G L Bajaj. Master of Computer
+                Applications (MCA) is a two-year professional postgraduate
+                program focused on advanced computer applications, software
+                development, and modern programming technologies.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className={`education-box education-right_box`}>
-          <img
-            className="education-icons"
-            src={IMS}
-            alt="bseb"
-            data-aos="zoom-in"
-          />
-          <div className="education-text_box" data-aos="fade-up">
-            <p className="education-title">
-              Bachelor of Computer Applications (BCA)
-            </p>
-            <p className="education-subtitle">IMS Ghaziabad</p>
-            <p className="education-date">[ August 2017 - July 2020 ]</p>
-            <p>
-              I did my BCA from IMS Ghaziabad. It's a three-year undergraduate
-              degree program that focuses on computer applications and software
-              development.
-            </p>
-            <span className="education-right_box_arrow"></span>
+
+          <div
+            className="education-card2"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div className="education-card-content">
+              <h2 className="education-title">
+                Bachelor of Computer Applications (BCA)
+              </h2>
+
+              <h3 className="education-subtitle">IMSUC Ghaziabad</h3>
+
+              <h4 className="education-time">[ August 2017 - July 2020 ]</h4>
+
+              <p className="education-description">
+                I completed my BCA from IMS Ghaziabad. It is a three-year
+                undergraduate degree program focused on computer applications,
+                programming fundamentals, and software development.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
+
+export default Education;

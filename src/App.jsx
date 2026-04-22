@@ -1,18 +1,21 @@
 import React from "react";
 import "./App.css";
 import { Navbar } from "./Components/navbar/Navbar";
-import { About } from "./Components/about/About";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
 import { Skills } from "./Components/skills/Skills";
-import { Projects } from "./Components/projects/Projects";
 import { Experiences } from "./Components/experiences/Experiences";
-import { Education } from "./Components/education/Education";
-import { Footer } from "./Components/footer/Footer";
+import Projects from "./Components/projects/Projects";
+import Education from "./Components/education/Education";
+import Footer from "./Components/footer/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
+
+      <Hero />
 
       <section id="about">
         <About />

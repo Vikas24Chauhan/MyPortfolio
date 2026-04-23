@@ -117,10 +117,9 @@
   align-items: center;
   flex-wrap: wrap;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border: 1px solid #ffffff;
   background-color: rgba(17, 25, 40, 0.83);
   box-shadow: rgba(0, 81, 255, 0.15) 10px 10px 240px;
-  color: rgb(177, 178, 179);
   font-size: 28px;
   font-weight: 600;
   text-align: center;

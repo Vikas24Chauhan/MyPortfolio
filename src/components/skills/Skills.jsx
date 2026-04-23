@@ -14,10 +14,16 @@ import RestAPI from "../../assets/images/restapi.png";
 import Git from "../../assets/images/git.png";
 import GitHub from "../../assets/images/github.png";
 import VSCode from "../../assets/images/vscode.png";
-import ChatGPT from "../../assets/images/chatgpt.png";
 import C from "../../assets/images/c.png";
 import Java from "../../assets/images/java.png";
 import Python from "../../assets/images/python.png";
+import Vercel from "../../assets/images/vercel.webp";
+import Hostinger from "../../assets/images/hostinger.png";
+import Gemini from "../../assets/images/gemini.webp";
+import Emergent from "../../assets/images/emergent.png";
+import ChatGPT from "../../assets/images/chatgpt.png";
+import Dribbble from "../../assets/images/dribbble.png";
+import Claude from "../../assets/images/claude.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -109,6 +115,28 @@ export const Skills = () => {
             </div>
 
             <div className="skills-card tilt">
+              <h2 className="skills-card-title">AI</h2>
+              <div className="skills-tech_box">
+                <div className="skills-tech">
+                  <img src={ChatGPT} alt="chatgpt" />
+                  ChatGPT
+                </div>
+                <div className="skills-tech">
+                  <img src={Claude} alt="chatgpt" />
+                  Claude
+                </div>
+                <div className="skills-tech">
+                  <img src={Gemini} alt="chatgpt" />
+                  Gemini
+                </div>
+                <div className="skills-tech">
+                  <img src={Emergent} alt="chatgpt" />
+                  Emergent
+                </div>
+              </div>
+            </div>
+
+            <div className="skills-card tilt">
               <h2 className="skills-card-title">Other Tools</h2>
               <div className="skills-tech_box">
                 <div className="skills-tech">
@@ -119,16 +147,22 @@ export const Skills = () => {
                   <img src={GitHub} alt="github" />
                   GitHub
                 </div>
-
                 <div className="skills-tech">
                   <img src={VSCode} alt="vscode" />
                   VS Code
                 </div>
-
-                {/* <div className="skills-tech">
-                <img src={ChatGPT} alt="chatgpt" />
-                ChatGPT
-              </div> */}
+                <div className="skills-tech">
+                  <img src={Vercel} alt="vscode" />
+                  Vercel
+                </div>
+                <div className="skills-tech">
+                  <img src={Hostinger} alt="vscode" />
+                  Hostinger
+                </div>
+                <div className="skills-tech">
+                  <img src={Dribbble} alt="vscode" />
+                  Dribbble
+                </div>
               </div>
             </div>
           </div>

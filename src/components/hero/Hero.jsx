@@ -39,7 +39,7 @@ function Hero() {
 
       <div className="hero-left-title">
         <h1 className="hero-name">
-          Yo, I'm
+          Yo, This is
           <br />
           Vikas Chauhan
         </h1>

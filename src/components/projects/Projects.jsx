@@ -122,8 +122,12 @@ function Projects() {
     {
       id: "01",
       title: "CoreBTR",
-      image:
-        "https://cdn.dribbble.com/userupload/47497062/file/bc876d35285636455e5ae65d60395035.png",
+      image1:
+        "https://cdn.dribbble.com/userupload/47497062/file/27f70a5ad3a7f9722977a4d381488680.png",
+      image2:
+        "https://cdn.dribbble.com/userupload/47515957/file/905e0b72613a02aa7e6e610e3c109759.png",
+      image3:
+        "https://cdn.dribbble.com/userupload/47515966/file/e381d283aa0b3e7830e842d51b113f78.png",
       description:
         "A Unique platform where concepts finally make sense, where revision stops feeling overwhelming, and where preparation becomes clear, structured, and truly doable. Built by Dr. Zainab Vora for students who are tired of confusion and ready for clarity, CoreBTR is designed with one simple goal-learning that is simpler, smarter, and always student-first.",
       link: "https://corebtr.com",
@@ -131,8 +135,12 @@ function Projects() {
     {
       id: "02",
       title: "Believers Consultancy",
-      image:
+      image1:
         "https://cdn.dribbble.com/userupload/47497391/file/85909bbce7be333d291ab43c03935d8c.png",
+      image2:
+        "https://cdn.dribbble.com/userupload/47515958/file/ed46e591d0e08c90848b4a27969faa16.png",
+      image3:
+        "https://cdn.dribbble.com/userupload/47515963/file/9fb6d806c0226c088dbc3c54ed5e28f9.png",
       description:
         "Your trusted partner for NEET PG Counselling, INICET, medical college admissions, and career guidance. Expert consultation for medical aspirants with rank predictor and college finder tools.",
       link: "https://believersconsultancy.com/",
@@ -140,8 +148,12 @@ function Projects() {
     {
       id: "03",
       title: "Dr. Zainab Vora",
-      image:
+      image1:
         "https://cdn.dribbble.com/userupload/47497389/file/0be98ce15ff7ca3c4a9ef74cbeecb771.png",
+      image2:
+        "https://cdn.dribbble.com/userupload/47515961/file/3c18d9d5ac16613553d1a1d99b2f988f.png",
+      image3:
+        "https://cdn.dribbble.com/userupload/47515965/file/3b8d53dab700f7aed290946ef57d525e.png",
       description:
         "Dr. Zainab Vora MD Radiology ( AIIMS Delhi ), National NEET PG Mentor, and the mastermind behind BTR. An AIIMS New Delhi alumnus and AIR 1 in INI-CET, Dr. Zainab Vora is more than an educator - she is a pillar of hope for PG aspirants across India. With compassion and clarity, she has transformed countless journeys through the BTR course - turning confusion into confidence and dreams into reality which is why she known as the “BTR Queen,” To her students, she is not just a mentor but a belief that says, 'Your story can still change'. “Kahani tumhaari hai. Ho sake toh kamaal likhna.”",
       link: "https://drzainabvora.com/",
@@ -149,8 +161,12 @@ function Projects() {
     {
       id: "04",
       title: "Dr. Apurv Mehra",
-      image:
+      image1:
         "https://cdn.dribbble.com/userupload/47497388/file/db77ac6244fd2f2c0d725d066d148af5.png",
+      image2:
+        "https://cdn.dribbble.com/userupload/47515964/file/2073fdd441e6c63b17cdcd9d9c05ee86.png",
+      image3:
+        "https://cdn.dribbble.com/userupload/47515959/file/60b42362acaa4747d1b992c4830f6d0d.png",
       description:
         "DR. Apurv Mehra MBBS | MS | MD | DNB (Orthopaedics) | DIP.SCOT - Belgium, Leading Orthopedician & Robotic Joint Replacement Surgeon, Renowned Educator, Founder eConceptual, Co - Founder Cerebellum, Founder Vidya Jeevan Education Centre, Founder Vidya Jeevan Clinic for Orthopedics, Bestselling Author of Medical PG Books & Motivational Speaker",
       link: "https://drapurv.com/",
@@ -158,8 +174,12 @@ function Projects() {
     {
       id: "05",
       title: "eConceptual",
-      image:
+      image1:
         "https://cdn.dribbble.com/userupload/47497390/file/1d672095a08ca88c4aa7aec2cf812306.png",
+      image2:
+        "https://cdn.dribbble.com/userupload/47515960/file/6b5fd793449a905af766a9eb1223f170.png",
+      image3:
+        "https://cdn.dribbble.com/userupload/47515962/file/efe6d1a893d60207adc65ed324f90515.png",
       description:
         "A platform for Medical Postgraduate (PG) residents to enhance their skills under the guidance of experienced teachers. App to Master Your Specialization.",
       link: "https://econceptual.com/",
@@ -217,19 +237,19 @@ function Projects() {
                 <div className="projects-card-image1">
                   <img
                     className="projects-card-image"
-                    src={card.image}
+                    src={card.image1}
                     alt={card.title}
                   />
                 </div>
                 <div className="projects-card-image2">
                   <img
                     className="projects-card-image"
-                    src={card.image}
+                    src={card.image2}
                     alt={card.title}
                   />
                   <img
                     className="projects-card-image"
-                    src={card.image}
+                    src={card.image3}
                     alt={card.title}
                   />
                 </div>

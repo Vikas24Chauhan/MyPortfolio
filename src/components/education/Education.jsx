@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Education.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Books from "../../assets/images/books.png";
 
 function Education() {
   useEffect(() => {
@@ -17,6 +18,8 @@ function Education() {
           The academic institutions and programs that have contributed to my
           knowledge and growth.
         </p>
+
+        <img className="experiences-books" src={Books} alt="" />
 
         <div className="education-cards">
           <div className="education-card1" data-aos="fade-up">

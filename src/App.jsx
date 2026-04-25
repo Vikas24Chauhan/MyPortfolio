@@ -8,6 +8,7 @@ import { Skills } from "./components/skills/Skills";
 import { Experiences } from "./components/experiences/Experiences";
 import Projects from "./components/projects/Projects";
 import Education from "./components/education/Education";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -39,6 +40,10 @@ function App() {
 
       <section id="education">
         <Education />
+      </section>
+
+      <section id="contact">
+        <Contact />
       </section>
 
       <Footer />

@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import LeewayHertz from "../../assets/images/leewayHertz.png";
 import Ten from "../../assets/images/ten.webp";
 import BD from "../../assets/images/bd-logo.jpg";
+import Like from "../../assets/images/like.png";
+import Star from "../../assets/images/star.png";
 
 export const Experiences = () => {
   useEffect(() => {
@@ -19,6 +21,10 @@ export const Experiences = () => {
           The experiences and roles that have helped me grow and develop my
           skills in the tech field.
         </p>
+
+        <img className="experiences-star" src={Star} alt="" />
+        <img className="experiences-like" src={Like} alt="" />
+
         <div className="experiences-timeline">
           <div className="experiences-box experiences-right_box">
             <img

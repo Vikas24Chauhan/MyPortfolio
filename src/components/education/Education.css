@@ -7,15 +7,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 6rem 0;
   background-color: #ffffff;
   border-radius: 50px 50px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.experiences-books {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  width: 120px;
 }
 
 .education-heading {
   text-align: center;
   font-size: 42px;
   font-weight: 600;
+  z-index: 1;
 }
 
 .education-subheading {
@@ -23,6 +33,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0 10px;
+  z-index: 1;
 }
 
 .education-cards {
@@ -120,6 +131,12 @@
 @media (max-width: 868px) {
   .education-section {
     border-radius: 40px 40px 0 0;
+  }
+
+  .experiences-books {
+    top: 2%;
+    right: 5%;
+    width: 80px;
   }
 
   .education-cards {

@@ -115,7 +115,6 @@ export const Navbar = () => {
               Projects
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to="#education"
@@ -125,6 +124,17 @@ export const Navbar = () => {
               onClick={() => scrollToSection("education")}
             >
               Education
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#contact"
+              className={
+                activeLink === "contact" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
             </NavLink>
           </li>
         </ul>
@@ -194,6 +204,17 @@ export const Navbar = () => {
               onClick={() => scrollToSection("education")}
             >
               Education
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#contact"
+              className={
+                activeLink === "contact" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
             </NavLink>
           </li>
           <li>

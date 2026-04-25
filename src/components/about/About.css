@@ -5,17 +5,26 @@
 .about-section {
   position: relative;
   text-align: center;
-  padding: 5rem 0;
-  background-color: #ffffff;
+  padding: 8rem 0;
+  background-image: url("https://cdn.dribbble.com/userupload/47508253/file/92949478f8594ecb2cefb9998cdb47fe.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 50px 50px 0 0;
 }
 
 .about-content {
   position: relative;
   z-index: 1;
-  width: 80%;
+  width: 60%;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+/* ── Heading wrapper ── */
+.heading-wrap {
+  position: relative;
+  display: inline-block;
 }
 
 .about-content h2 {
@@ -24,15 +33,43 @@
 }
 
 .about-content p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
 }
 
-/* ----------------------------- Responsive Style ---------------------------- */
+/* ── SVG oval ── */
+.sketch-oval {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 115%; /* a little wider than the text */
+  height: 160%; /* tall enough to encircle the text */
+  pointer-events: none;
+  overflow: visible;
+}
 
+.oval-path {
+  stroke-dasharray: 660;
+  stroke-dashoffset: 660;
+  transition: none;
+}
+
+/* Triggered by IntersectionObserver adding .animate */
+.sketch-oval.animate .oval-path {
+  animation: drawOval 1.2s cubic-bezier(0.35, 0, 0.2, 1) 0.15s forwards;
+}
+
+@keyframes drawOval {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ── Responsive Styles ── */
 @media (max-width: 1440px) {
   .about-content {
-    width: 85%;
+    width: 75%;
   }
 }
 
@@ -46,7 +83,6 @@
   .about-section {
     border-radius: 40px 40px 0 0;
   }
-
   .about-content {
     width: 95%;
   }
@@ -56,11 +92,9 @@
   .about-section {
     border-radius: 30px 30px 0 0;
   }
-
   .about-content {
     width: 100%;
   }
-
   .about-content h2 {
     font-size: 32px;
   }

@@ -7,15 +7,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 6rem 0;
   background-color: #ffffff;
   border-radius: 50px 50px 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.experiences-star {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+}
+
+.experiences-like {
+  position: absolute;
+  top: 50%;
+  right: 20%;
 }
 
 .experiences-heading {
   text-align: center;
   font-size: 42px;
   font-weight: 600;
+  z-index: 1;
 }
 
 .experiences-subheading {
@@ -23,6 +39,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0 10px;
+  z-index: 1;
 }
 
 .experiences-timeline {
@@ -32,6 +49,7 @@
   padding-top: 2rem;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .experiences-box {
@@ -206,6 +224,16 @@
 @media (max-width: 868px) {
   .experiences-section {
     border-radius: 40px 40px 0 0;
+  }
+
+  .experiences-star {
+    top: 1%;
+    width: 100px;
+  }
+  .experiences-like {
+    width: 100px;
+    top: 92%;
+    right: 8%;
   }
 
   .experiences-timeline {

@@ -2,14 +2,14 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar } from "./components/navbar/Navbar";
-// import Hero from "./components/hero/Hero";
-// import About from "./components/about/About";
-// import { Skills } from "./components/skills/Skills";
-// import { Experiences } from "./components/experiences/Experiences";
-// import Projects from "./components/projects/Projects";
-// import Education from "./components/education/Education";
-// import Contact from "./components/contact/Contact";
-// import Footer from "./components/footer/Footer";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+import { Skills } from "./components/skills/Skills";
+import { Experiences } from "./components/experiences/Experiences";
+import Projects from "./components/projects/Projects";
+import Education from "./components/education/Education";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,35 +18,35 @@ function App() {
 
       {/* <Hero /> */}
 
-      {/* <section id="/">
+      <section id="/">
         <Hero />
-      </section> */}
+      </section>
 
-      {/* <section id="about">
+      <section id="about">
         <About />
-      </section> */}
+      </section>
 
-      {/* <section id="skills">
+      <section id="skills">
         <Skills />
-      </section> */}
+      </section>
 
-      {/* <section id="experiences">
+      <section id="experiences">
         <Experiences />
-      </section> */}
+      </section>
 
-      {/* <section id="projects">
+      <section id="projects">
         <Projects />
-      </section> */}
+      </section>
 
-      {/* <section id="education">
+      <section id="education">
         <Education />
-      </section> */}
+      </section>
 
-      {/* <section id="contact">
+      <section id="contact">
         <Contact />
-      </section> */}
+      </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

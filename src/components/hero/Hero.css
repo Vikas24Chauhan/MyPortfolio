@@ -254,6 +254,7 @@
 
   .hero-left-title {
     top: 65%;
+    left: 0;
   }
 
   .hero-name {
@@ -266,7 +267,7 @@
   }
 
   .hero-right {
-    left: 32px;
+    left: 8%;
     top: 85%;
     align-items: start;
   }

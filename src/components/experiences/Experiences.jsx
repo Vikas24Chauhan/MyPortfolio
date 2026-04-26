@@ -22,8 +22,8 @@ export const Experiences = () => {
           skills in the tech field.
         </p>
 
-        {/* <img className="experiences-star" src={Star} alt="" /> */}
-        {/* <img className="experiences-like" src={Like} alt="" /> */}
+        <img className="experiences-star" src={Star} alt="" />
+        <img className="experiences-like" src={Like} alt="" />
 
         <div className="experiences-timeline">
           <div className="experiences-box experiences-right_box">

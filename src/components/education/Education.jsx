@@ -19,7 +19,7 @@ function Education() {
           knowledge and growth.
         </p>
 
-        {/* <img className="experiences-books" src={Books} alt="" /> */}
+        <img className="experiences-books" src={Books} alt="" />
 
         <div className="education-cards">
           <div className="education-card1" data-aos="fade-up">

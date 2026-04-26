@@ -55,7 +55,180 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar-container">
-      <div className="navbar-main">hi vikas chauhan here testing it</div>
+      <div className="navbar-main">
+        <div>
+          <Link
+            to="/"
+            className="navbar-name"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <span className="navbar-brackets">&lt;</span>Vikas
+            <span className="navbar-slash">/</span>Chauhan
+            <span className="navbar-brackets">&gt;</span>
+          </Link>
+        </div>
+        <div className="navbar-menu_icon" onClick={handleIsOpen}>
+          {!isOpen ? "\u2630" : "\u2716"}
+        </div>
+        <ul className="navbar-collapse">
+          <li>
+            <NavLink
+              to="#about"
+              className={
+                activeLink === "about" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("about")}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#skills"
+              className={
+                activeLink === "skills" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("skills")}
+            >
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#experiences"
+              className={
+                activeLink === "experiences" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("experiences")}
+            >
+              Experiences
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#projects"
+              className={
+                activeLink === "projects" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("projects")}
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#education"
+              className={
+                activeLink === "education" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("education")}
+            >
+              Education
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#contact"
+              className={
+                activeLink === "contact" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+        <div className="navbar-collapse">
+          <a
+            className="navbar-github"
+            href="https://github.com/Vikas24Chauhan"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+      {isOpen && (
+        <div className="navbar-dropdown">
+          <li>
+            <NavLink
+              to="#about"
+              className={
+                activeLink === "about" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("about")}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#skills"
+              className={
+                activeLink === "skills" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("skills")}
+            >
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#experiences"
+              className={
+                activeLink === "experiences" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("experiences")}
+            >
+              Experience
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#projects"
+              className={
+                activeLink === "projects" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("projects")}
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#education"
+              className={
+                activeLink === "education" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("education")}
+            >
+              Education
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="#contact"
+              className={
+                activeLink === "contact" ? "navbar-active" : "navbar-anchor"
+              }
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <a
+              className="navbar-github"
+              href="https://github.com/Vikas24Chauhan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Profile
+            </a>
+          </li>
+        </div>
+      )}
     </nav>
   );
 };

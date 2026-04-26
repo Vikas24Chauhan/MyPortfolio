@@ -1,19 +1,24 @@
-.navbar-main {
-  padding: 1.5rem 2rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.navbar-container {
+/* .navbar-container {
   z-index: 10;
   top: 0;
   width: 100%;
   background-color: #000000;
   color: white;
+    position: fixed;
+} */
+
+.navbar-main {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   position: fixed;
+  z-index: 10;
 }
 
 .navbar-name {

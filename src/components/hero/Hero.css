@@ -283,10 +283,10 @@
     letter-spacing: 0.02em;
   }
 
-  .hero-left-title,
+  /* .hero-left-title,
   .hero-right {
     left: 20px;
-  }
+  } */
 
   .hero-name {
     font-size: 28px;

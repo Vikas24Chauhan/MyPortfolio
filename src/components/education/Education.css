@@ -14,12 +14,12 @@
   overflow: hidden;
 }
 
-.experiences-books {
+/* .experiences-books {
   position: absolute;
   top: 10%;
   right: 8%;
   width: 120px;
-}
+} */
 
 .education-heading {
   text-align: center;
@@ -133,11 +133,11 @@
     border-radius: 40px 40px 0 0;
   }
 
-  .experiences-books {
+  /* .experiences-books {
     top: 2%;
     right: 5%;
     width: 80px;
-  }
+  } */
 
   .education-cards {
     width: 95%;
